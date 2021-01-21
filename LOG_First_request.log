@@ -1,0 +1,117 @@
+2021-01-21 16:33:46,918 : INFO : init First_request.py
+2021-01-21 16:33:46,919 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:33:47,193 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:33:47,195 : INFO : status code 200
+2021-01-21 16:34:36,756 : INFO : init First_request.py
+2021-01-21 16:34:36,757 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:38:07,972 : INFO : init First_request.py
+2021-01-21 16:38:07,973 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:38:58,878 : INFO : init First_request.py
+2021-01-21 16:38:58,879 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:38:59,006 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:38:59,008 : INFO : status code 200
+2021-01-21 16:43:33,982 : INFO : init First_request.py
+2021-01-21 16:43:33,983 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:43:34,139 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:43:34,142 : INFO : status code 200
+2021-01-21 16:45:08,142 : INFO : init First_request.py
+2021-01-21 16:45:08,144 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:45:08,259 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:45:08,260 : INFO : status code 200
+2021-01-21 16:45:24,392 : INFO : init First_request.py
+2021-01-21 16:45:24,393 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:45:24,467 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:45:24,468 : INFO : status code 200
+2021-01-21 16:45:49,464 : INFO : init First_request.py
+2021-01-21 16:45:49,465 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:45:49,538 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:45:49,540 : INFO : status code 200
+2021-01-21 16:47:07,577 : INFO : init First_request.py
+2021-01-21 16:47:07,579 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:47:07,737 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2415
+2021-01-21 16:47:07,742 : INFO : status code 200
+2021-01-21 16:47:26,302 : INFO : init First_request.py
+2021-01-21 16:47:26,303 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:47:26,395 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2415
+2021-01-21 16:47:26,397 : INFO : status code 200
+2021-01-21 16:47:48,702 : INFO : init First_request.py
+2021-01-21 16:47:48,703 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:48:04,379 : INFO : init First_request.py
+2021-01-21 16:48:04,380 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:48:04,565 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:48:04,567 : INFO : status code 200
+2021-01-21 16:48:30,115 : INFO : init First_request.py
+2021-01-21 16:48:30,116 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:48:30,287 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+2021-01-21 16:48:30,288 : INFO : status code 200
+2021-01-21 16:50:14,098 : INFO : init First_request.py
+2021-01-21 16:50:14,099 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:50:14,367 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:50:14,368 : INFO : status code 200
+2021-01-21 16:51:54,275 : INFO : init First_request.py
+2021-01-21 16:51:54,276 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:51:54,381 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:51:54,385 : INFO : status code 200
+2021-01-21 16:54:39,106 : INFO : init First_request.py
+2021-01-21 16:54:39,108 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:54:39,204 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:54:39,208 : INFO : status code 200
+2021-01-21 16:55:14,406 : INFO : init First_request.py
+2021-01-21 16:55:14,407 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:55:14,505 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:55:14,509 : INFO : status code 200
+2021-01-21 16:56:54,413 : INFO : init First_request.py
+2021-01-21 16:56:54,415 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:56:54,609 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:56:54,613 : INFO : status code 200
+2021-01-21 16:57:17,705 : INFO : init First_request.py
+2021-01-21 16:57:17,706 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:57:17,801 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:57:17,806 : INFO : status code 200
+2021-01-21 16:57:42,590 : INFO : init First_request.py
+2021-01-21 16:57:42,591 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:57:42,715 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:57:42,716 : INFO : status code 200
+2021-01-21 16:58:13,701 : INFO : init First_request.py
+2021-01-21 16:58:13,702 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:58:13,789 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2415
+2021-01-21 16:58:13,794 : INFO : status code 200
+2021-01-21 16:59:37,487 : INFO : init First_request.py
+2021-01-21 16:59:37,488 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 16:59:37,637 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 16:59:37,639 : INFO : status code 200
+2021-01-21 17:00:51,566 : INFO : init First_request.py
+2021-01-21 17:00:51,567 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 17:00:51,665 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2415
+2021-01-21 17:00:51,670 : INFO : status code 200
+2021-01-21 17:05:54,537 : INFO : init First_request.py
+2021-01-21 17:05:54,538 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 17:05:54,787 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 17:05:54,792 : INFO : status code 200
+2021-01-21 17:06:54,080 : INFO : init First_request.py
+2021-01-21 17:06:54,081 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 17:06:54,224 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2415
+2021-01-21 17:06:54,227 : INFO : status code 200
+2021-01-21 17:09:32,857 : INFO : init First_request.py
+2021-01-21 17:09:32,858 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 17:09:33,027 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 17:09:33,030 : INFO : status code 200
+2021-01-21 17:09:54,111 : INFO : init First_request.py
+2021-01-21 17:09:54,112 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 17:09:55,230 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 17:09:55,233 : INFO : status code 200
+2021-01-21 17:13:56,581 : INFO : init First_request.py
+2021-01-21 17:13:56,582 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 17:13:56,713 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 17:13:56,715 : INFO : status code 200
+2021-01-21 17:13:56,716 : INFO : json.dump ok
+2021-01-21 17:18:16,872 : INFO : init First_request.py
+2021-01-21 17:18:16,873 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 17:18:16,985 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 17:18:16,987 : INFO : status code 200
+2021-01-21 17:18:16,987 : INFO : json.dump ok
+2021-01-21 17:18:44,290 : INFO : init First_request.py
+2021-01-21 17:18:44,291 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 17:18:44,374 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 17:18:44,386 : INFO : status code 200
+2021-01-21 17:18:44,387 : INFO : json.dump ok
