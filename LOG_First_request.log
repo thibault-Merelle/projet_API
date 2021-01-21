@@ -115,3 +115,26 @@
 2021-01-21 17:18:44,374 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
 2021-01-21 17:18:44,386 : INFO : status code 200
 2021-01-21 17:18:44,387 : INFO : json.dump ok
+2021-01-21 23:48:17,835 : INFO : init First_request.py
+2021-01-21 23:48:17,836 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 23:48:18,038 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 23:48:18,042 : INFO : status code 200
+2021-01-21 23:48:18,043 : INFO : json.dump ok
+2021-01-21 23:49:05,477 : INFO : init First_request.py
+2021-01-21 23:49:05,478 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 23:49:05,559 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 23:49:05,561 : INFO : status code 200
+2021-01-21 23:49:05,562 : INFO : json.dump ok
+2021-01-21 23:57:47,480 : INFO : init First_request.py
+2021-01-21 23:57:47,481 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 23:57:47,686 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 23:57:47,688 : INFO : status code 200
+2021-01-21 23:57:47,690 : INFO : json.dump ok
+2021-01-21 23:57:47,707 : INFO : csv Reader ok
+2021-01-21 23:57:47,707 : INFO : csv Writer ok
+2021-01-21 23:58:05,895 : INFO : init First_request.py
+2021-01-21 23:58:05,896 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-21 23:58:05,963 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+2021-01-21 23:58:05,964 : INFO : status code 200
+2021-01-21 23:58:05,965 : INFO : json.dump ok
+2021-01-21 23:58:05,981 : WARNING : Erreur fichier Data CSV
