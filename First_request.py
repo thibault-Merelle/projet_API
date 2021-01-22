@@ -14,6 +14,7 @@ logging.info("init First_request.py")
 
 #request api.sncf endpoint = stop_areas
 r = requests.get('https://api.sncf.com/v1/coverage/sncf/stop_areas', auth = ('75cad487-3e50-4835-a3b5-299fc791dcd5', ''))
+#data = json.loads(r.text)
 
 if r.status_code == 200:
     print('Success!')
@@ -26,7 +27,65 @@ with open("api_sncf.json", "w") as API:
     json.dump(r.text, API)
     logging.info("json.dump ok")
 
-pprint(r.json())
+doc = r.json()
+print(type(doc))
+#pprint(doc)
+
+#recherche dans le Json:
+  
+#recherche dans stop_areas  
+[print(key) for key in doc]
+print(doc['links'])
+print(len(doc['links']))
+
+areas = doc["stop_areas"]
+print(type(areas))
+area = areas[0]
+list_id = []
+for loop_area in areas:
+    if type(loop_area) == dict:
+        if "id" in loop_area.keys():
+            list_id.append(loop_area['id'])
+        else:
+            logging.warning("id key not in areas")
+    else:
+        logging.warning("unexpeted format (dict expected): {type(loop_area)}")        
+
+print(len(list_id))
+print(list_id)
+
+#recherche dans links
+links = doc["links"]
+print(type(links))
+link = links[0]
+list_href = []
+for loop_href in links:
+    if type(loop_href) == dict:
+        if "href" in loop_href.keys():
+            list_href.append(loop_href['href'])
+        else:
+            logging.warning("href key not in links")
+    else:
+        logging.warning("unexpeted format (dict expected): {type(loop_href)}")        
+
+print(len(list_href))
+print(list_href)
+
+
+#print(type(area), area)
+
+#print(area.keys())
+
+#print(area['id'])
+#for i in my_list:
+#    for 
+#        my_ends.append(my_list[0])
+      
+    #for Value in doc:  
+    #    print(doc['links'][0]['href'])    
+ 
+  
+
 
 
 #fichier csv:
