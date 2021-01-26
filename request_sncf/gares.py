@@ -2,6 +2,7 @@ import json
 import csv
 import requests
 import logging
+import os
 
 
 
@@ -19,7 +20,7 @@ class Gares:
         self.pages = 1
         self.URL = 'https://api.sncf.com/v1/coverage/sncf/stop_areas?count=1000'
         self.token = ('75cad487-3e50-4835-a3b5-299fc791dcd5', '')
-        self.json_file = "gares_sncf.json"
+        self.json_file = 'gares_sncf.json'
         self.csv_file = 'gares_sncf.csv'
         self.list_id = [] #liste des stop_area
         self.list_label = [] #list code nom
@@ -47,7 +48,7 @@ class Gares:
 
 
 
-    def fgare_finder(self, doc):  
+    def fgares_finder(self, doc):  
         for loop_area in doc["stop_areas"]:
             if type(loop_area) == dict:
                 if "id" in loop_area.keys():
@@ -67,7 +68,7 @@ class Gares:
 
 
 
-    def fgare_storage(self):
+    def fgares_storage(self):
         self.list_out = zip(self.list_id, self.list_name, self.list_label)
         self.list_out = set(self.list_out)
         try:
@@ -84,7 +85,7 @@ class Gares:
 
 
 
-c = gares()
+c = Gares()
 while c.pages < 5 :
-    c.fgare_finder(c.fgares_request())
-c.fgare_storage()          
+    c.fgares_finder(c.fgares_request())
+c.fgares_storage()          
