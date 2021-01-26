@@ -1,0 +1,30 @@
+2021-01-25 19:26:36,774 : INFO : init routes.py
+2021-01-25 19:26:55,771 : INFO : init routes.py
+2021-01-25 19:28:37,049 : INFO : init routes.py
+2021-01-25 19:29:31,691 : INFO : init routes.py
+2021-01-25 19:30:30,686 : INFO : init routes.py
+2021-01-25 19:31:03,485 : INFO : init routes.py
+2021-01-25 19:31:03,486 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-25 19:31:03,782 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2063
+2021-01-25 19:31:03,785 : INFO : status code 200
+2021-01-25 19:31:03,787 : INFO : json.dump ok
+2021-01-25 19:32:25,461 : INFO : init routes.py
+2021-01-25 19:32:25,462 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-25 19:32:25,610 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2065
+2021-01-25 19:32:25,613 : INFO : status code 200
+2021-01-25 19:32:25,615 : INFO : json.dump ok
+2021-01-25 19:33:58,404 : INFO : init routes.py
+2021-01-25 19:33:58,405 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-25 19:33:58,537 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2067
+2021-01-25 19:33:58,540 : INFO : status code 200
+2021-01-25 19:33:58,541 : INFO : json.dump ok
+2021-01-25 19:34:35,350 : INFO : init routes.py
+2021-01-25 19:34:35,351 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-25 19:34:35,494 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2067
+2021-01-25 19:34:35,497 : INFO : status code 200
+2021-01-25 19:34:35,499 : INFO : json.dump ok
+2021-01-25 19:36:26,473 : INFO : init routes.py
+2021-01-25 19:36:26,474 : DEBUG : Starting new HTTPS connection (1): api.sncf.com:443
+2021-01-25 19:36:26,625 : DEBUG : https://api.sncf.com:443 "GET /v1/coverage/sncf/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2067
+2021-01-25 19:36:26,627 : INFO : status code 200
+2021-01-25 19:36:26,628 : INFO : json.dump ok
