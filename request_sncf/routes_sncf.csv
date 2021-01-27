@@ -1,0 +1,4 @@
+nbr_stops	stations	H_départ	H_arrivée	T_stops	T_trajet
+0	Paris-Gare-de-Lyon	2021-01-27 21:00:00	2021-01-27 21:00:00	0:00:00	0:00:00
+1	Lyon-Part-Dieu	2021-01-27 23:01:00	2021-01-27 22:56:00	0:05:00	1:56:00
+2	Lyon-Perrache	2021-01-27 23:09:00	2021-01-27 23:09:00	0:00:00	2:09:00

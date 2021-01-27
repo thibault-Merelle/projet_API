@@ -10,18 +10,18 @@ import os
 logging.basicConfig(level=logging.DEBUG,
                     filename="LOG_gares_request.log",
                     filemode="a", #append ou W pour écraser
-                    format='%(asctime)s : %(levelname)s : %(message)s') #manque start et end 
+                    format='%(asctime)s : %(levelname)s : %(message)s')  
 
 logging.info("init gares.py")
 
-class Gares:
+class MyGares:
 
     def __init__(self):
-        self.pages = 1
+        self.pages = 0
         self.URL = 'https://api.sncf.com/v1/coverage/sncf/stop_areas?count=1000'
         self.token = ('75cad487-3e50-4835-a3b5-299fc791dcd5', '')
-        self.json_file = 'gares_sncf.json'
-        self.csv_file = 'gares_sncf.csv'
+        self.json_file = 'gares_sncf'
+        self.csv_file = 'gares_sncf'
         self.list_id = [] #liste des stop_area
         self.list_label = [] #list code nom
         self.list_name = [] #list noms 
@@ -38,7 +38,7 @@ class Gares:
             print('not Found.')
             logging.warning("status code {r.status_code}")   
 
-        with open(self.json_file, "w") as API:
+        with open(self.json_file + ".json", "w") as API:
             json.dump(r.text, API)
             logging.info("json.dump ok")
             doc = r.json()
@@ -72,12 +72,13 @@ class Gares:
         self.list_out = zip(self.list_id, self.list_name, self.list_label)
         self.list_out = set(self.list_out)
         try:
-            with open(self.csv_file, 'w') as file:
+            with open(self.csv_file + ".csv", 'w') as file:
                 header = ['code_area','name', 'Label']
                 csv_writer = csv.writer(file, delimiter='\t') 
                 csv_writer.writerow(header)
                 logging.info("csv Writer(header) ok")
-                csv_writer.writerow(self.list_out)
+                for line in self.list_out:
+                    csv_writer.writerow(line)
             logging.info("csv Writer ok")
 
         except:
@@ -85,7 +86,4 @@ class Gares:
 
 
 
-c = Gares()
-while c.pages < 5 :
-    c.fgares_finder(c.fgares_request())
-c.fgares_storage()          
+         
