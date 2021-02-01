@@ -3,13 +3,6 @@ import csv
 import requests
 import logging
 from datetime import datetime, timedelta
-from gares import MyGares
-
-#logging.basicConfig(level=logging.DEBUG,
-#                    filename="LOG_routes_request.log",
-#                    filemode="a", #append ou W pour écraser
-#                    format='%(asctime)s : %(levelname)s : %(message)s') #manque start et end 
-
 
 
 class MyRoutes:
@@ -29,7 +22,6 @@ class MyRoutes:
         self.list_duration = []
         self.list_stops = []
         self.init_h = None
-        #self.list_out = []
         logging.basicConfig(level=logging.DEBUG,
                             filename="LOG_routes_request.log",
                             filemode="a", #append ou W pour écraser
@@ -50,20 +42,18 @@ class MyRoutes:
     def froutes_request(self):
         r = requests.get(self.URL + "from=" + self.depart + "&to=" + self.arrivee, auth=self.token)#.json()     + "&datetime=" + self.date_depart
         if r.status_code == 200:
-            print('Success!')
             logging.info("status code 200")
         elif r.status_code != 200:
-            print('not Found.')
             logging.warning("status code {r.status_code}")   
         return r
 
-    def froutes_read(self, r):
+    def froutes_write(self, r):
 
         with open(self.json_file + ".json", "w") as API:
             json.dump(r.text, API)
             logging.info("json.dump ok")
             mydoc = r.json()
-            return mydoc
+        return mydoc
 
     def froutes_finder(self, mydoc):
         section = mydoc['journeys'][0]['sections'][1]
@@ -76,7 +66,6 @@ class MyRoutes:
                 departure_time = self.str_convert_time(item['arrival_date_time'])
                 self.list_arrivee.append(str(departure_time))
                 self.list_stops.append(i)
-                #duration = (self.list_arrivee[-1])-(self.list_depart[-1])
                 time_stop = arrival_time - departure_time
                 self.list_time_stop.append(str(time_stop))
                 if i == 0:
@@ -84,16 +73,11 @@ class MyRoutes:
                 duration = departure_time - self.init_h
                 self.list_duration.append(str(duration))
         
-        print("list_time_stop\n", self.list_time_stop, "\n\n")
-        print("list_depart\n", self.list_depart, "\n\n")
-        print("list_stations\n", self.list_stations, "\n\n")
-        print("list_stops\n", self.list_stops, "\n\n")
-        print("list_arrivee\n", self.list_arrivee, "\n\n")
-        print("list_duration\n", self.list_duration, "\n\n")
+
 
     def froutes_storage(self):
         self.list_out = zip(self.list_stops, self.list_stations, self.list_depart, self.list_arrivee, self.list_time_stop, self.list_duration)
-        #self.list_out = set(self.list_out)
+
         try:
             with open(self.csv_file + ".csv", 'w') as file:
                 header = ['nbr_stops', 'stations', 'H_départ','H_arrivée', 'T_stops', 'T_trajet']

@@ -32,25 +32,26 @@ class MyGares:
     def fgares_request(self):
         r = requests.get(self.URL +"&start_page="+str(self.pages), auth=self.token)
         if r.status_code == 200:
-            print('Success!')
             logging.info("status code 200")
         elif r.status_code != 200:
-            print('not Found.')
-            logging.warning("status code {r.status_code}")   
+            logging.warning("status code {r.status_code}") 
+        return r  
 
+
+    def fgares_write(self, r):
         with open(self.json_file + ".json", "w") as API:
             json.dump(r.text, API)
             logging.info("json.dump ok")
-            doc = r.json()
-        self.pages +=1    
-        return doc
-        #récursion !! fgares_request(self, pages+1)
+            mydoc = r.json()
+        #self.pages +=1    
+        return mydoc
+        #récursion possible : fgares_request(self, pages+1)
 
 
 
-    def fgares_finder(self, doc):  
-        for loop_area in doc["stop_areas"]:
-            if type(loop_area) == dict:
+    def fgares_finder(self, mydoc):  
+        for loop_area in mydoc["stop_areas"]:
+            if isinstance(loop_area, dict):
                 if "id" in loop_area.keys():
                     self.list_id.append(loop_area['id'])
                     logging.info("id found !")
@@ -70,7 +71,7 @@ class MyGares:
 
     def fgares_storage(self):
         self.list_out = zip(self.list_id, self.list_name, self.list_label)
-        self.list_out = set(self.list_out)
+
         try:
             with open(self.csv_file + ".csv", 'w') as file:
                 header = ['code_area','name', 'Label']
